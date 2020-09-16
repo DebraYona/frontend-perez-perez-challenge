@@ -13,6 +13,9 @@ import { carsListSelector } from '../store/selectors/car';
 const useStyles = makeStyles({
   page: {
     padding: '1.9rem 3.2rem',
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
   },
   title: {
     display: 'flex',
@@ -24,7 +27,11 @@ const useStyles = makeStyles({
     marginLeft: '1.2rem',
   },
   clientList: {
+    flex: 1,
     width: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
 
