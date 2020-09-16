@@ -25,6 +25,17 @@ export default function MyApp(props: any) {
       <Head>
         <title>Perez & Perez</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+        <style jsx global>
+          {`
+            /* Other global styles such as 'html, body' etc... */
+            body {
+              height: 100vh;
+            }
+            #__next {
+              height: 100vh;
+            }
+          `}
+        </style>
       </Head>
       <Provider store={store}>
         <ThemeProvider theme={theme}>
